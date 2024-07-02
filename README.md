@@ -24,7 +24,7 @@
     * [Code Style Guide](#code-style-guide)
 
     ---
-    
+
 # Help Documentation
 
 ## Installation Instructions
@@ -37,6 +37,7 @@
     * Navigate to cloned directory:
 
     ``` cd T1A3-HuyenTramTiffanyVo ```
+    ``` cd src```
 
 2. Set up Virtual Environment
     * create a vitrual environment:
