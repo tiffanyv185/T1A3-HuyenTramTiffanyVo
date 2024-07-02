@@ -13,7 +13,7 @@ def add_goal(date): # Prompt user to enter goal details and add the goal to the 
 def edit_goal(data): # List goals, prompt the user to select a goal and edit its details
     list_goals(data)
     goal_index = int(input("Enter the goal index to edit: "))
-    if 0 <= goal_index <len(data["goals"]):
+    if 0 <= goal_index < len(data["goals"]):
         goal = data_index["goals"][goal_index]
         goal["name"] = input(f"Enter a new name (current: {goal['name']}): ") or goal["name"]
         goal["target"] = float(input(f"Enter the new target (current: {goal['target']}): ") or goal["target"])
