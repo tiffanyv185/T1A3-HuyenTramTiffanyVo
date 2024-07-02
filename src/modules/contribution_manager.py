@@ -3,6 +3,7 @@ from prettytable import PrettyTable
 import data_manager
 import modules.goal_manager as goal_manager
 
+
 def contribute(data): # List goals, prompt user to select a goal and contribute to it.
     goal_manager.list_goals(data)
     goal_index = int(input("Enter the goal index you want to contribute to: "))
@@ -15,3 +16,10 @@ def contribute(data): # List goals, prompt user to select a goal and contribute 
         print("Contribution added successfully!")
     else:
         print("Invalid goal index!")
+    
+
+    def view_history(data): # Display the history of all contributions in a table
+        table = PrettyTable(["Goal", "Amount", "Date"])
+        for contribution in data["contributions"]:
+            table.add_row([contribution["goal"], contribution["amount"], contribution["date"]])
+        print(table)
