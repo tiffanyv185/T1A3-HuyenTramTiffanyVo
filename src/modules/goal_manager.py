@@ -10,7 +10,7 @@ def add_goal(date): # Prompt user to enter goal details and add the goal to the 
     data["goals"].append(goal)
     data_manager.save_data(data)
     print("Woohoo! Goal added successfully. Good luck!")
-
+    
 
 def edit_goal(data): # List goals, prompt the user to select a goal and edit its details
     list_goals(data)

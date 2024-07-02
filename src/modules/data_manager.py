@@ -3,6 +3,7 @@ import os
 
 FILE_PATH = "saving_data.json" # Define the file path for saving data
 
+
 def load_data(): # Load data from file
     if os.path.exits(FILE_PATH): #load data from JSON file if it exists, otherwise return default data
         with open(FILE_PATH, 'r') as file:
