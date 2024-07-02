@@ -9,6 +9,22 @@
                       |__/                       |___/                       
 
 ```
+
+# Table of Contents
+* [Help Documentation](#help-documentation)
+    * [Installation Instructions](#installation-instructions)
+    * [Dependencies](#dependencies)
+    * [User Guide](#user-guide)
+
+* [Information](#information)
+    * [Github Repository](#github-repository)
+    * [Introduction](#introduction)
+    * [Overview of Features](#overview-of-features)
+    * [Implentation Plan](#implementation-plan)
+    * [Code Style Guide](#code-style-guide)
+
+    ---
+    
 # Help Documentation
 
 ## Installation Instructions
