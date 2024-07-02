@@ -9,6 +9,61 @@
                       |__/                       |___/                       
 
 ```
+# Help Documentation
+
+## Installation Instructions
+1. Clone the Repository:
+    * Open the terminal.
+    * Run the following command to clone the repository:
+
+    ``` git clone git@github.com:tiffanyv185/T1A3-HuyenTramTiffanyVo.git ```
+
+    * Navigate to cloned directory:
+
+    ``` cd T1A3-HuyenTramTiffanyVo ```
+
+2. Set up Virtual Environment
+    * create a vitrual environment:
+
+    ``` python3 -m venv env ```
+
+    * Activate virtual environment:
+
+    ``` source env/bin/activate ``` 
+
+3. Install Dependencies:
+    * Install the required dependencies using `pip`:
+
+    ``` pip install -r requirements.txt ```
+
+## Dependencies
+The application requires the following Python packages:
+* ```datetime```: For handling dates.
+* ``` json```: library modile for JSON encoding and decoding.
+* ```prettytable```: library for displaying tabular data in a readable format.
+* ```os```: library module for interacting with the operating system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Github Repository: 
 https://github.com/tiffanyv185/T1A3-HuyenTramTiffanyVo
 
