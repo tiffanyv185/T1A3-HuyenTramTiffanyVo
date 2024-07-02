@@ -43,6 +43,65 @@ The application requires the following Python packages:
 * ```prettytable```: library for displaying tabular data in a readable format.
 * ```os```: library module for interacting with the operating system
 
+## System/Hardware Requirements:
+* <b>Operating System:</b> Windows, MacOS, or Linux
+* <b>Python Version: </b> Python 3.6 or higher
+* <b>Hardware:</b> Any modern computer
+
+## User Guide:
+To use the Money Saving Goal application, follow these steps:
+
+1. Run the Application:
+    * In your terminal, navate to the application directory 
+
+        ```cd src```
+    * Run the main script:
+
+    ``` python3 main.py```
+
+2. Navigate the Menu:
+    * You will see a menu with multiple options. Enter the number corresponding to the action you want to perform:
+```
+Money Saving Application:
+1. Add Goal
+2. Edit Goal
+3. Delete Goal
+4. List Goals
+5. Contribute to Goal
+6. View Contribution History
+7. View Monthly Report
+8. Send Notifications
+9. Exit
+
+Enter your choice:
+```
+
+3. Add Goal:
+    *  Choose ```1``` and follow the prompts to enter the goal name, target amount, and deadline.
+
+4. Edit a Goal:
+    * Choose ```2```, a list of goals will appear. Enter the index of the goal you want to edit. Follow the prompts to update the goal details.
+
+5. Delete a Goal:
+    * Choose ```3```, a list of goals will appear. Enter the index of the goal you want to delete.
+
+6. List Goals:
+    * Choose ```4``` to view all your saving goals.
+
+7. Contribute to a Goal:
+    * Choose ```5```, a list of goals will appear. Enter the index of the goal you want to contribute to. Enter amount when prompted.
+
+8. View Contribution History:
+    * Choose ```6``` to see a detailed history of all contributions made to your goals.
+
+9. View Monthly Report:
+    * Choose ```7``` and enter the month (YYYY-MM) to generate a report of contributions for that month.
+
+10. Send Notifications:
+    * Choose ```8``` to receive notifications about goals that have been acieved or have upcoming deadlines.
+
+11. Exit the Application:
+    * Choose ```9``` to exit.
 
 
 
@@ -57,12 +116,7 @@ The application requires the following Python packages:
 
 
 
-
-
-
-
-
-
+# Information
 
 ## Github Repository: 
 https://github.com/tiffanyv185/T1A3-HuyenTramTiffanyVo
