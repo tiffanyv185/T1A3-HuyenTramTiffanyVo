@@ -23,3 +23,15 @@ This terminal based application is designed to help users manage their financial
 * <b>History of Contributions:</b> Users can view a detailed history of their contributions made, allowing them to see how much they've contributed to each goal.
 * <b>Receive Notifications:</b> Users will be able to receive notifications when a goal is achieved and alerts for upcoming deadlines, ensurin gthat they stay on track.
 * <b>Monthly Reports:</b> Users can get generated monthly reports to review their savings and contributions for any given month.
+
+## Code Style Guide
+This code follows the PEP 8 style guide. the official guide for Python code. PEP 8 provides readable and cosistent conventions for code. 
+The following is a summary of PEP 8 Style guide:
+* Indentation: Uses 4 spaces per indentation.
+* Blank Lines: Surround top-level function and class definitions with two lines. Method definitions are surrounded by a single blanke line.
+* Imports: Imports are placed together at the top of the the file.
+* Whitespace: Use of whitespace to seperate elements in code, such as operators, commas and semicolons.
+* Comments: Inline comments used with space after the ```#``` symbol.
+* Naming Conventions: Use descriptive names for variables, functions and classes. functions and variables should be lowercase, with words seperated by underscores ```(snake_case)```
+
+More information can be found 
