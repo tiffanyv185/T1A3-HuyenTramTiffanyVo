@@ -1,6 +1,15 @@
 # T1A3 Terminal Application
 ## Huyen Tram Tiffany Vo
-----------
+```
+
+  __  __                     ___           _              ___           _    
+ |  \/  |___ _ _  ___ _  _  / __| __ ___ _(_)_ _  __ _   / __|___  __ _| |___
+ | |\/| / _ \ ' \/ -_) || | \__ \/ _` \ V / | ' \/ _` | | (_ / _ \/ _` | (_-<
+ |_|  |_\___/_||_\___|\_, | |___/\__,_|\_/|_|_||_\__, |  \___\___/\__,_|_/__/
+                      |__/                       |___/                       
+
+```
+
 ## Introduction
 This terminal based application is designed to help users manage their financial goals effectively. Whether they are saving for a holiday, car, house, or any other personal goals, this application will provide a structured way to track their progress, make contributions and stay informed about their milestones and dealines.
 
