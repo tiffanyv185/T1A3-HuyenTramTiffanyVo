@@ -66,7 +66,7 @@ The application requires the following Python packages:
 * <b>Hardware:</b> Any modern computer
 
 ## User Guide:
-To use the Money Saving Goal application, follow these steps:
+To use the Money Saving Goal application, follow the installation guide first and then do the following:
 
 1. Run the Application:
     * In your terminal, navate to the application directory 
