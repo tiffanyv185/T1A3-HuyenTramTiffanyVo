@@ -9,6 +9,8 @@
                       |__/                       |___/                       
 
 ```
+## Github Repository: 
+https://github.com/tiffanyv185/T1A3-HuyenTramTiffanyVo
 
 ## Introduction
 This terminal based application is designed to help users manage their financial goals effectively. Whether they are saving for a holiday, car, house, or any other personal goals, this application will provide a structured way to track their progress, make contributions and stay informed about their milestones and dealines.
