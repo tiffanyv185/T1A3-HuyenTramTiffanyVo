@@ -8,7 +8,7 @@ def add_goal(data): # Prompt user to enter goal details and add the goal to the 
     goal = {"name": name, "target": target, "deadline": deadline, "saved": 0}
     data["goals"].append(goal)
     data_manager.save_data(data)
-    print("Woohoo! Goal added successfully. Good luck!")
+    print("\nWoohoo! Goal added successfully. Good luck!")
 
 def edit_goal(data): # List goals, prompt the user to select a goal and edit its details
     list_goals(data)
@@ -19,9 +19,9 @@ def edit_goal(data): # List goals, prompt the user to select a goal and edit its
         goal["target"] = float(input(f"Enter the new target (current: {goal['target']}): ") or goal["target"])
         goal["deadline"] = input(f"Enter the new deadline (current: {goal['deadline']}): ") or goal["deadline"]
         data_manager.save_data(data)
-        print("Goal edited successfully!")
+        print("\nGoal edited successfully!")
     else:
-        print("Invalid goal index!")
+        print("\nInvalid goal index!")
 
 def delete_goal(data): # List goals, prompt user to select which goal to delete.
     list_goals(data)
@@ -29,9 +29,9 @@ def delete_goal(data): # List goals, prompt user to select which goal to delete.
     if 0 <= goal_index < len(data["goals"]):
         data["goals"].pop(goal_index)
         data_manager.save_data(data)
-        print("Goal deleted successfully!")
+        print("\nGoal deleted successfully!")
     else:
-        print("Invalid goal index!")
+        print("\nInvalid goal index!")
 
 def list_goals(data): # display all goals in formatted table for user
     table = PrettyTable(["Index", "Name", "Target", "Deadline", "Saved", "Progress"])
