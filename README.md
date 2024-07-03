@@ -36,9 +36,9 @@
 
     * Navigate to cloned directory:
 
-   1.  ``` cd T1A3-HuyenTramTiffanyVo ```
+   1.  ```cd T1A3-HuyenTramTiffanyVo```
 
-   2.  ``` cd src```
+   2.  ```cd src```
 
 2. Set up Virtual Environment
     * create a vitrual environment:
