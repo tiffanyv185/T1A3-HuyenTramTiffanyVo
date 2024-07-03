@@ -1,7 +1,7 @@
 import json
 import os
 
-FILE_PATH = "saving_data.json" # Define the file path for saving data
+FILE_PATH = "saving_user_data.json" # Define the file path for saving data
 
 
 def load_data(): # Load data from file

@@ -1,7 +1,7 @@
 import datetime
 from prettytable import PrettyTable
 import data_manager
-import modules.goal_manager as goal_manager
+import goal_manager 
 
 
 def contribute(data): # List goals, prompt user to select a goal and contribute to it.
