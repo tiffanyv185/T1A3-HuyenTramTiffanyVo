@@ -11,7 +11,7 @@ def add_goal(data): # Prompt user to enter goal details and add the goal to the 
     goal = {"name": name, "target": target, "deadline": deadline, "saved": 0} # create goal dictionary with the initial saved amount of 0
     data["goals"].append(goal) # add the new goal to the list of goals in data
     data_manager.save_data(data) # save the updated data
-    print(Fore.GREEN + "\nWoohoo! Goal added successfully. Good luck!")
+    print(Fore.GREEN + Style.BRIGHT + "\nWoohoo! Goal added successfully. Good luck!")
 
 def edit_goal(data): # List goals, prompt the user to select a goal and edit its details
     list_goals(data) # display the list of current goals
@@ -22,7 +22,7 @@ def edit_goal(data): # List goals, prompt the user to select a goal and edit its
         goal["target"] = float(input(f"Enter the new target (current: {goal['target']}): ") or goal["target"]) # prompt user to enter in new target or keep current target
         goal["deadline"] = input(f"Enter the new deadline (current: {goal['deadline']}): ") or goal["deadline"] # prompt user to enter in new deadline or keep current deadline
         data_manager.save_data(data) # save the updated data
-        print(Fore.GREEN + "\nGoal edited successfully!")
+        print(Fore.GREEN + Style.BRIGHT + "\nGoal edited successfully!")
     else:
         print(Fore.RED + "\nInvalid goal index!")
 

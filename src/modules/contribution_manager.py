@@ -15,7 +15,7 @@ def contribute(data): # List goals, prompt user to select a goal and contribute 
         contribution = {"goal": data["goals"][goal_index]["name"], "amount": amount, "date": str(datetime.date.today())} # create a contribution record
         data["contributions"].append(contribution) # add the contribution record to the contributions list
         data_manager.save_data(data) # save the contribution data
-        print(Fore.GREEN + "Contribution added successfully!")
+        print(Fore.GREEN + Style.BRIGHT + "Contribution added successfully!")
     else:
         print(Fore.RED + "Invalid goal index!")
     

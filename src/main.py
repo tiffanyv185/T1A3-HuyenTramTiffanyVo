@@ -1,4 +1,4 @@
-from colorama import init, Fore
+from colorama import init, Fore, Style
 from modules import data_manager
 from modules import goal_manager
 from modules import contribution_manager
@@ -9,8 +9,8 @@ init(autoreset=True)
 def main(): # Run main application loop, display the menu and handle user input
     data = data_manager.load_data()
     while True:
-        print("\nMoney Saving Application")
-        print(Fore.YELLOW + "1. Add new goal")
+        print(Style.BRIGHT + "\nMoney Saving Application")
+        print(Fore.YELLOW + "\n1. Add new goal")
         print(Fore.MAGENTA + "2. Edit existing goal")
         print(Fore.YELLOW + "3. Delete a goal")
         print(Fore.MAGENTA + "4. List all your goals")
