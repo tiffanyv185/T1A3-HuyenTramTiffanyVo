@@ -36,8 +36,9 @@
 
     * Navigate to cloned directory:
 
-    ``` cd T1A3-HuyenTramTiffanyVo ```
-    ``` cd src```
+   1.  ``` cd T1A3-HuyenTramTiffanyVo ```
+
+   2.  ``` cd src```
 
 2. Set up Virtual Environment
     * create a vitrual environment:
@@ -87,7 +88,6 @@ Money Saving Application:
 5. Contribute to Goal
 6. View Contribution History
 7. View Monthly Report
-8. Send Notifications
 9. Exit
 
 Enter your choice:
@@ -114,10 +114,7 @@ Enter your choice:
 9. View Monthly Report:
     * Choose ```7``` and enter the month (YYYY-MM) to generate a report of contributions for that month.
 
-10. Send Notifications:
-    * Choose ```8``` to receive notifications about goals that have been acieved or have upcoming deadlines.
-
-11. Exit the Application:
+10. Exit the Application:
     * Choose ```9``` to exit.
 
 
@@ -147,7 +144,6 @@ This terminal based application is designed to help users manage their financial
 * <b>Contributions:</b> Users will be able to make contributions towards their goals an dtrack how much they have saved over time.
 * <b>Progress Tracking:</b> Users can view their progress of each goal and their overall savings at a glance.
 * <b>History of Contributions:</b> Users can view a detailed history of their contributions made, allowing them to see how much they've contributed to each goal.
-* <b>Receive Notifications:</b> Users will be able to receive notifications when a goal is achieved and alerts for upcoming deadlines, ensurin gthat they stay on track.
 * <b>Monthly Reports:</b> Users can get generated monthly reports to review their savings and contributions for any given month.
 
 ## Implementation Plan
@@ -157,7 +153,6 @@ The application needs to:
     - Enable users to contribute to their saving goals.
     - Track their progress of each goal.
     - Provide a history of contributions.
-    - Notify the users of milesotones and deadlines.
     - Generate monthly reports of contributions.
 
 2. <b>Designing the Application Structure:</b>
@@ -165,6 +160,7 @@ The application is divided into several modules to seperate concerns and improve
     - ```data_manager.py```: Manages loading and saving data.
     - ```goal_manager.py```: Handles adding, editing, deleting and listing goals.
     -```contribution_manager.py```: Manages contributions and viewing contribution history.
+    - ```report_manager.py```: Handles monthly contributuions report.
     - ```main.py```: The main entry point of the application, providing the user interface and menu.
 
 
