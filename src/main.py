@@ -6,17 +6,17 @@ from modules import report_manager
 def main(): # Run main application loop, display the menu and handle user input
     data = data_manager.load_data()
     while True:
-        print("\nMoney Saving Application!")
-        print("1. Add a new savings goal")
-        print("2. Edit existing goal")
-        print("3. Delete existing goal")
-        print("4. List all your goals")
-        print("5. Contribute money to your goal")
-        print("6. View your contribution history")
-        print("7. View monthly report")
-        print("8. Let's see if you've reached any goals or have any deadlines")
+        print("\nMoney Saving Application")
+        print("1. Add Goal")
+        print("2. Edit Goal")
+        print("3. Delete Goal")
+        print("4. List Goals")
+        print("5. Contribute to Goal")
+        print("6. View Contribution History")
+        print("7. View Monthly Report")
+        print("8. Send Notifications")
         print("9. Exit")
-        choice = input("Please choose an option: ")
+        choice = input("Enter your choice: ")
 
         if choice == "1":
             goal_manager.add_goal(data)

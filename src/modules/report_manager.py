@@ -2,7 +2,7 @@ import datetime
 from prettytable import PrettyTable
 
 
-def view_montly_report(data): # allow users to view total contributions from a chosen month
+def view_monthly_report(data): # allow users to view total contributions from a chosen month
     month = input("Enter the month for the report (YYYY-MM): ")
     table = PrettyTable(["Goal", "Total Contributions"])
     report = {}
