@@ -1,5 +1,5 @@
 from prettytable import PrettyTable
-from data_manager import save_user_data
+from modules import data_manager
 
 
 def add_goal(data): # Prompt user to enter goal details and add the goal to the data
