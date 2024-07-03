@@ -60,6 +60,7 @@ The application requires the following Python packages:
 * ``` json```: library modile for JSON encoding and decoding.
 * ```prettytable```: library for displaying tabular data in a readable format.
 * ```os```: library module for interacting with the operating system
+* ```colorama```: library that allows text to displayed in different styles and colours.
 
 ## System/Hardware Requirements:
 * <b>Operating System:</b> Windows, MacOS, or Linux

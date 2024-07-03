@@ -1,7 +1,10 @@
 import datetime # module for handling dates
 from prettytable import PrettyTable # 3rd party library for displaying data in a table
+from colorama import init, Fore, Style
 from modules import data_manager # module to save data after making a contribution
 from modules import goal_manager # module to list goals when making a contribution
+
+init(autoreset=True)
 
 def contribute(data): # List goals, prompt user to select a goal and contribute to it.
     goal_manager.list_goals(data) # list the existing goals
@@ -12,9 +15,9 @@ def contribute(data): # List goals, prompt user to select a goal and contribute 
         contribution = {"goal": data["goals"][goal_index]["name"], "amount": amount, "date": str(datetime.date.today())} # create a contribution record
         data["contributions"].append(contribution) # add the contribution record to the contributions list
         data_manager.save_data(data) # save the contribution data
-        print("Contribution added successfully!")
+        print(Fore.GREEN + "Contribution added successfully!")
     else:
-        print("Invalid goal index!")
+        print(Fore.RED + "Invalid goal index!")
     
 def view_history(data): # Display the history of all contributions in a table#
     table = PrettyTable(["Goal", "Amount", "Date"]) # create a table with the headers (goal, amount and date)

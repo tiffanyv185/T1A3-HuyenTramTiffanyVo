@@ -1,6 +1,8 @@
 import datetime # module to handle dates
 from prettytable import PrettyTable # 3rd party library to display data in a table
+from colorama import init, Fore, Style
 
+init(autoreset=True)
 
 def view_monthly_report(data): # allow users to view total contributions from a chosen month
     month = input("Enter the month for the report (YYYY-MM): ") # prompt user to enter the month for the report
