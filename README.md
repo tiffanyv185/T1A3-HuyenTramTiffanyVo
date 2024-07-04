@@ -158,7 +158,7 @@ This terminal based application is designed to help users manage their financial
             - [x] Allow users to delete existing goals.
             - [x] Presents all existing goals in formatted table to users.
 
-    -<b>```contribution_manager.py```:</b> Manages contributions and viewing contribution history.
+    - <b>```contribution_manager.py```:</b> Manages contributions and viewing contribution history.
         - Purpose: Allows users to add contributions and view contribution history.
         - ```contribute(data)``` function: Allows users to enter in contribution to a goal. Lists out existing goals for users to view with index, prompts users to enter in intended goal index to contribute to. Adds inputed contribution to data.
         - ```view_history(data)```: Displays history of all contributions in table for users.
