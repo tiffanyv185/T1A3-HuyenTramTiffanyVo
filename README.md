@@ -149,17 +149,17 @@ This terminal based application is designed to help users manage their financial
 
     - <b> ```goal_manager.py``` function:</b>
         - Purpose: Manage saving goals.
-        - ```add_goal(data)``` function: prompts users to add name, targeted amount and deadline to new goal. Then adds goal to data.
-        - ```edit_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to edit, asks for updated name, targeted amount and deadline. Updated goal is then added saved to data.
-        - ```delete_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to delete. Deletes selected goal from data.
-        - ```list_goals(data)``` function: displays all goals in a readable format for users.
+        - ```add_goal(data)``` function: Allows users to add new goals.
+        - ```edit_goal(data)``` function: Allows users to edit existing goals.
+        - ```delete_goal(data)``` function: Allows users to delete existing goals.
+        - ```list_goals(data)``` function: Displays all goals in a readable format for users.
 
         - <u>Checklist:</u>
             - [x] Imports necessary modules (prettytable and data_manager)
-            - [x] Add goal function: Prompts users for new goal details, creates a goal dictionary, appends the goal to the data, saves the data using ```data_manager.save_data(data)``` and provides user feedback.
-            - [x] Edit goal function: Lists existing goals, prompts users to choose goal with index, validates the index, allows the user to update the goal details, save the updated data and provides user feedback.
-            - [x] Delete goal function: Lists exiting goals, prompts users to choose goal with index, validates the index, removes chosen goal, saves the updated data and provides user feedback.
-            - [x] List goals function: Creates a table using ```PrettyTable``` with headers, loops through all the goals and adds them to the table and prints the table.
+            - [x] Add goal function: Prompts users for new goal details &rarr; creates a goal dictionary &rarr; appends the goal to the data &rarr; saves the data using ```data_manager.save_data(data)``` &rarr; provides user feedback.
+            - [x] Edit goal function: Lists existing goals &rarr; prompts users to choose goal with index &rarr; validates the index &rarr; allows the user to update the goal details &rarr; save the updated data &rarr; provides user feedback.
+            - [x] Delete goal function: Lists exiting goals &rarr; prompts users to choose goal with index &rarr; validates the index &rarr; removes chosen goal &rarr; saves the updated data &rarr; provides user feedback.
+            - [x] List goals function: Creates a table using ```PrettyTable``` with headers &rarr; loops through all the goals &rarr; adds them to the table &rarr; prints the table.
             - [x] Error handling: Customer input index is validated each time. Error messsage is displayed when necessary.
             - [x] DRY code: Functions are focused on a single task. Functions are imported from data_manager to avoiding repeating.
             - [x] Comments are provided extensively.
@@ -167,24 +167,24 @@ This terminal based application is designed to help users manage their financial
 
     - <b>```contribution_manager.py```:</b> Manages contributions and viewing contribution history.
         - Purpose: Allows users to add contributions and view contribution history.
-        - ```contribute(data)``` function: Allows users to enter in contribution to a goal. Lists out existing goals for users to view with index, prompts users to enter in intended goal index to contribute to. Adds inputed contribution to data.
+        - ```contribute(data)``` function: Allows users to add contributions to existing goals.
         - ```view_history(data)```: Displays history of all contributions in table for users.
 
         - <u>Checklist:</u>
             - [x] Imports necessary modules (data_manager, datetime and prettytable)
-            - [x] Contribute function: Lists existing goals, prompts users to choose goal with index, validates the index, prompts user for contribution amount, updates the goal's saved amount, adds the contribution details to data, saves the updated data and then provides feedback to users.
-            - [x] View contribution history function: Uses ```prettytable``` to format data, loops through each contribution in ```user_data.json``` and add rows to the table and then displays formatted table to the user.
+            - [x] Contribute function: Lists existing goals &rarr; prompts users to choose goal with index &rarr; validates the index &rarr; prompts user for contribution amount &rarr; updates the goal's saved amount &rarr; adds the contribution details to data &rarr; saves the updated data &rarr; then provides feedback to users.
+            - [x] View contribution history function: Uses ```prettytable``` to format data &rarr; loops through each contribution in ```user_data.json``` &rarr; add rows to the table &rarr; then displays formatted table to the user.
             - [x] Error handling: Ensures that errors are handled, provides meaningful message to the user when error is found. Index is validated everytime.
             - [x] DRY code: Each function has a single task. data_manager module is imported to avoid repeating.
             - [x] Comments are provided extensively.
 
     - <b>```report_manager.py```:</b>
         - Purpose: Generate monthly reports for users.
-        - ```view_monthly_report(data)``` function: Prompts users to enter in selected month and year. Generates a monthly report of selected month for users.
+        - ```view_monthly_report(data)``` function: Allows users to view monthly reports of selected month.
 
         - <u>Checklist:</u>
             - [x] Imports necessary modules (data_manager, datetime and prettytable)
-            - [x] Monthly report function: Prompts user for the month in which they want to generate a report for, creates a table with ```PrettyTable```, loops through the contributions and filters by specified month, aggregates contributions fore ach goal, adds the aggregated data to the table and then displays table to the user.
+            - [x] Monthly report function: Prompts user for the month in which they want to generate a report for &rarr; creates a table with ```PrettyTable``` &rarr; loops through the contributions and filters by specified month &rarr; aggregates contributions for ach goal &rarr; adds the aggregated data to the table and then displays table to the user.
             - [x] DRY code: modules are imported (data_manager) to avoid repeating.
             - [x] Comments are provided extensively.
 
@@ -214,4 +214,4 @@ The following is a summary of PEP 8 Style guide:
 * Comments: Inline comments used with space after the ```#``` symbol.
 * Naming Conventions: Use descriptive names for variables, functions and classes. functions and variables should be lowercase, with words seperated by underscores ```(snake_case)```
 
-More information can be found [here](https://peps.python.org/pep-0008/).
+More information can be found [here](https://peps.python.org/pep-0008/). 
