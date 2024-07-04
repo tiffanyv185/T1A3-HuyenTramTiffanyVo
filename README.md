@@ -137,53 +137,71 @@ This terminal based application is designed to help users manage their financial
         - Purpose: to manage data storage and retrieval. 
         - ```load_data(data)``` function: ensures that existing data is loaded, and if there is no existing data, a new JSON file is created.
         - ```save_data(data)```:  Save user input data to JSON file.
-        - <u>Checklist:</u>
-            - [x] Imports JSON and os modules.
-            - [x] Establishes a file path to JSON file
-            - [x] Check if any existing JSON file exists.
-            - [x] Create new JSON file if none exists.
-            - [x] A function to allow user input data to be saved in JSON file
 
-    - <b>```goal_manager.py``` function:</b>
+        - <u>Checklist:</u>
+            - [x] Imports necessary modules(json and os)
+            - [x] File path configuration: Defines a file path where data will be stored ```user_data.json```
+            - [x] Loading data: checks if data file ```user_data.json``` already exists using ```os.path.exists(FILE_PATH)```
+            - [x] Create new JSON file if none exists.
+            - [x] DRY Coding: Functions are short, reuseable and easy to maintain.
+            - [x] Default data structure for goals and contributions are stated.
+            - [x] Comments are provided extensively.
+
+    - <b> ```goal_manager.py``` function:</b>
         - Purpose: Manage saving goals.
         - ```add_goal(data)``` function: prompts users to add name, targeted amount and deadline to new goal. Then adds goal to data.
         - ```edit_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to edit, asks for updated name, targeted amount and deadline. Updated goal is then added saved to data.
         - ```delete_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to delete. Deletes selected goal from data.
         - ```list_goals(data)``` function: displays all goals in a readable format for users.
+
         - <u>Checklist:</u>
-            - [x] Imports prettytable, colorama and data_manager modules
-            - [x] Allows users to add new goals. 
-            - [x] Saves new goals to JSON file.
-            - [x] Allow users to edit existing goals.
-            - [x] Allow users to delete existing goals.
-            - [x] Presents all existing goals in formatted table to users.
+            - [x] Imports necessary modules (prettytable and data_manager)
+            - [x] Add goal function: Prompts users for new goal details, creates a goal dictionary, appends the goal to the data, saves the data using ```data_manager.save_data(data)``` and provides user feedback.
+            - [x] Edit goal function: Lists existing goals, prompts users to choose goal with index, validates the index, allows the user to update the goal details, save the updated data and provides user feedback.
+            - [x] Delete goal function: Lists exiting goals, prompts users to choose goal with index, validates the index, removes chosen goal, saves the updated data and provides user feedback.
+            - [x] List goals function: Creates a table using ```PrettyTable``` with headers, loops through all the goals and adds them to the table and prints the table.
+            - [x] Error handling: Customer input index is validated each time. Error messsage is displayed when necessary.
+            - [x] DRY code: Functions are focused on a single task. Functions are imported from data_manager to avoiding repeating.
+            - [x] Comments are provided extensively.
+
 
     - <b>```contribution_manager.py```:</b> Manages contributions and viewing contribution history.
         - Purpose: Allows users to add contributions and view contribution history.
         - ```contribute(data)``` function: Allows users to enter in contribution to a goal. Lists out existing goals for users to view with index, prompts users to enter in intended goal index to contribute to. Adds inputed contribution to data.
         - ```view_history(data)```: Displays history of all contributions in table for users.
+
         - <u>Checklist:</u>
-            - [x] Imports datatime, prettytable, colorama, data_manager, goal_manager modules.
-            - [x] Allows users to view list of existing contributions
-            - [x] Allows users to choose existing goal and contribute.
-            - [x] Saves contribution to JSON file
-            - [x] Prints out all contributions in formatted table for users.
+            - [x] Imports necessary modules (data_manager, datetime and prettytable)
+            - [x] Contribute function: Lists existing goals, prompts users to choose goal with index, validates the index, prompts user for contribution amount, updates the goal's saved amount, adds the contribution details to data, saves the updated data and then provides feedback to users.
+            - [x] View contribution history function: Uses ```prettytable``` to format data, loops through each contribution in ```user_data.json``` and add rows to the table and then displays formatted table to the user.
+            - [x] Error handling: Ensures that errors are handled, provides meaningful message to the user when error is found. Index is validated everytime.
+            - [x] DRY code: Each function has a single task. data_manager module is imported to avoid repeating.
+            - [x] Comments are provided extensively.
 
     - <b>```report_manager.py```:</b>
         - Purpose: Generate monthly reports for users.
         - ```view_monthly_report(data)``` function: Prompts users to enter in selected month and year. Generates a monthly report of selected month for users.
 
         - <u>Checklist:</u>
-            - [x] Imports datetime, prettytable and colorama module
-            - [x] Allows users to enter in chosen month.
-            - [x] Loops through all contributions, and if contribution date starts with user chosen date. 
-            - [x] Adds total contribution for the goals if the date criteria is met.
-            - [x] Prints a monthly report of chosen month in a formatted table.
+            - [x] Imports necessary modules (data_manager, datetime and prettytable)
+            - [x] Monthly report function: Prompts user for the month in which they want to generate a report for, creates a table with ```PrettyTable```, loops through the contributions and filters by specified month, aggregates contributions fore ach goal, adds the aggregated data to the table and then displays table to the user.
+            - [x] DRY code: modules are imported (data_manager) to avoid repeating.
+            - [x] Comments are provided extensively.
 
     - ```main.py```:
         - Purpose: The main entry point of the application for users. Provides the user interface and menu.
 
-3. <b>
+        - <u>Checklist:</u>
+            - [x] Imports and initialising: Import necessary modules and initialise 'colorama'
+            - [x] Main function: Define the 'main' function to handle function's loop.
+            - [x] Load data: Use 'data_manager.load_data() to load existing data at the start.
+            - [x] User interface: Print the full menu of options to all functions.
+            - [x] Menu options: use 'if-elif-else' to handle user choices and call corresponding functions from other modules.
+            - [x] Error handling: Provide meaningful error message to user.
+            - [x] User feedback: Provide clear feedback for each operation.
+            - [x] Saving data: ensure that any changes to data are saved immediately using 'data_manager.save_data(data)' function in the appropriate functions.
+            - [x] Exit: Allow users to exit the application.
+            - [x] Ensure that script only runs when executed directly by using ``` if __name___ == "_main_": main()```.
 
 
 ## Code Style Guide
