@@ -9,7 +9,7 @@
                       <___'                        <___'      |_|  |_|  
 
 ```
-Welcome to the Money Saving App! This app is designed to help you effectively manage and track your saving goals. Please [click here](#help-documentation) to get started.
+💸₊˚⊹💲 ♡ Welcome to the Money Saving App! This app is designed to help you effectively manage and track your saving goals. Please [click here](#help-documentation) to get started 💸₊˚⊹💲 ♡
 
 # Table of Contents
 * [Help Documentation](#help-documentation)
@@ -58,7 +58,7 @@ Welcome to the Money Saving App! This app is designed to help you effectively ma
 5. Set up Virtual Environment
     * create a vitrual environment:
 
-    ``` python3 -m venv env ```
+    ``` python3 -m venv venv ```
 
     * Activate virtual environment:
 
@@ -91,7 +91,7 @@ The application requires the following Python packages:
 To use the Money Saving Goal application, follow the installation guide first and then do the following:
 
 1. Run the Application:
-    * In your terminal, navate to the application directory 
+    * In your terminal, navigate to the application directory 
 
         ```cd src```
     * Run the main script:

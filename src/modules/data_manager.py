@@ -1,7 +1,7 @@
 import json # module used for encoding and decoding JSON data
 import os # module used for interacting with the operating system, in this case, to check if the JSON file exists
 
-FILE_PATH = "saving_user_data.json" # Define the file path for saving data
+FILE_PATH = "'./data/user_data.json' " # Define the file path for saving data
 
 def load_data(): # Load data from file
     if os.path.exists(FILE_PATH): # check if file JSON file exists
