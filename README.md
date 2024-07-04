@@ -15,7 +15,6 @@
 * [Help Documentation](#help-documentation)
     * [Installation Instructions](#installation-instructions)
     * [Dependencies](#dependencies)
-    * [User Guide](#user-guide)
 
 * [Information](#information)
     * [Github Repository](#github-repository)
@@ -134,12 +133,57 @@ This terminal based application is designed to help users manage their financial
 2. <b>Designing the Application Structure:</b>
 
     The application is divided into several modules to seperate concerns and improve maintainability:
-    - ```data_manager.py```: Manages loading and saving data.
-    - ```goal_manager.py```: Handles adding, editing, deleting and listing goals.
-    -```contribution_manager.py```: Manages contributions and viewing contribution history.
-    - ```report_manager.py```: Handles monthly contributuions report.
-    - ```main.py```: The main entry point of the application, providing the user interface and menu.
+    - <b>```data_manager.py```:</b>
+        - Purpose: to manage data storage and retrieval. 
+        - ```load_data(data)``` function: ensures that existing data is loaded, and if there is no existing data, a new JSON file is created.
+        - ```save_data(data)```:  Save user input data to JSON file.
+        - <u>Checklist:</u>
+            - [x] Imports JSON and os modules.
+            - [x] Establishes a file path to JSON file
+            - [x] Check if any existing JSON file exists.
+            - [x] Create new JSON file if none exists.
+            - [x] A function to allow user input data to be saved in JSON file
 
+    - <b>```goal_manager.py``` function:</b>
+        - Purpose: Manage saving goals.
+        - ```add_goal(data)``` function: prompts users to add name, targeted amount and deadline to new goal. Then adds goal to data.
+        - ```edit_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to edit, asks for updated name, targeted amount and deadline. Updated goal is then added saved to data.
+        - ```delete_goal(data)``` function: lists out existing goals for users to view with index, prompts user to enter in intended goal index to delete. Deletes selected goal from data.
+        - ```list_goals(data)``` function: displays all goals in a readable format for users.
+        - <u>Checklist:</u>
+            - [x] Imports prettytable, colorama and data_manager modules
+            - [x] Allows users to add new goals. 
+            - [x] Saves new goals to JSON file.
+            - [x] Allow users to edit existing goals.
+            - [x] Allow users to delete existing goals.
+            - [x] Presents all existing goals in formatted table to users.
+
+    -<b>```contribution_manager.py```:</b> Manages contributions and viewing contribution history.
+        - Purpose: Allows users to add contributions and view contribution history.
+        - ```contribute(data)``` function: Allows users to enter in contribution to a goal. Lists out existing goals for users to view with index, prompts users to enter in intended goal index to contribute to. Adds inputed contribution to data.
+        - ```view_history(data)```: Displays history of all contributions in table for users.
+        - <u>Checklist:</u>
+            - [x] Imports datatime, prettytable, colorama, data_manager, goal_manager modules.
+            - [x] Allows users to view list of existing contributions
+            - [x] Allows users to choose existing goal and contribute.
+            - [x] Saves contribution to JSON file
+            - [x] Prints out all contributions in formatted table for users.
+
+    - <b>```report_manager.py```:</b>
+        - Purpose: Generate monthly reports for users.
+        - ```view_monthly_report(data)``` function: Prompts users to enter in selected month and year. Generates a monthly report of selected month for users.
+
+        - <u>Checklist:</u>
+            - [x] Imports datetime, prettytable and colorama module
+            - [x] Allows users to enter in chosen month.
+            - [x] Loops through all contributions, and if contribution date starts with user chosen date. 
+            - [x] Adds total contribution for the goals if the date criteria is met.
+            - [x] Prints a monthly report of chosen month in a formatted table.
+
+    - ```main.py```:
+        - Purpose: The main entry point of the application for users. Provides the user interface and menu.
+
+3. <b>
 
 
 ## Code Style Guide
