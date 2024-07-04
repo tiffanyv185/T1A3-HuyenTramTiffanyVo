@@ -62,7 +62,7 @@
 
     * Activate virtual environment:
 
-    ``` source env/bin/activate ``` 
+    ``` source venv/bin/activate ``` 
 
 6. Install Dependencies:
     * Install the required dependencies using `pip`:

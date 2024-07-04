@@ -1,5 +1,22 @@
 #!/bin/bash
 
+# Function to check if Python is installed
+check_python() {
+    if command -v python3 &>/dev/null; then
+        echo "Python is installed."
+    else
+        echo "Python is not installed. Installing Python..."
+        
+        # For macOS, use Homebrew to install Python
+        if command -v brew &>/dev/null; then
+            brew install python
+        else
+            echo "Homebrew is not installed. Please install Homebrew first."
+            exit 1
+        fi
+    fi
+}
+
 # Navigate to the 'src' directory
 cd src
 
