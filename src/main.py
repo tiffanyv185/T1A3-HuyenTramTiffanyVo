@@ -1,12 +1,15 @@
-from colorama import init, Fore, Style # adds color to the terminal output; the menu
-from modules import data_manager # handles loading and saving data
-from modules import goal_manager # manages goals (add, edit, delete, list)
-from modules import contribution_manager # manages contributions and viewing of contribution history
-from modules import report_manager # generates monthly reports
+from colorama import init, Fore, Style  # adds color to the terminal output; the menu
+from modules import data_manager  # handles loading and saving data
+from modules import goal_manager  # manages goals (add, edit, delete, list)
+from modules import (
+    contribution_manager,
+)  # manages contributions and viewing of contribution history
+from modules import report_manager  # generates monthly reports
 
 init(autoreset=True)
 
-def main(): # Run main application loop, display the menu and handle user input
+
+def main():  # Run main application loop, display the menu and handle user input
     data = data_manager.load_data()
     while True:
         print(Style.BRIGHT + "\nMoney Saving Application")
@@ -20,7 +23,7 @@ def main(): # Run main application loop, display the menu and handle user input
         print(Fore.RED + "\n8. Exit")
         choice = input("\nEnter your choice: ")
 
-        if choice == "1": # handles user choices
+        if choice == "1":  # handles user choices
             goal_manager.add_goal(data)
         elif choice == "2":
             goal_manager.edit_goal(data)
@@ -40,5 +43,8 @@ def main(): # Run main application loop, display the menu and handle user input
         else:
             print("Invalid choice! Please try again.")
 
-if __name__ == "__main__": # to ensure that the 'main()' function is only executed when the script is ran directly and not when it is imported as a module
+
+if (
+    __name__ == "__main__"
+):  # to ensure that the 'main()' function is only executed when the script is ran directly and not when it is imported as a module
     main()

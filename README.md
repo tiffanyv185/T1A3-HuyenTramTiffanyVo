@@ -184,7 +184,7 @@ This terminal based application is designed to help users manage their financial
 
         - <u>Checklist:</u>
             - [x] Imports necessary modules (data_manager, datetime and prettytable)
-            - [x] Monthly report function: Prompts user for the month in which they want to generate a report for &rarr; creates a table with ```PrettyTable``` &rarr; loops through the contributions and filters by specified month &rarr; aggregates contributions for ach goal &rarr; adds the aggregated data to the table and then displays table to the user.
+            - [x] Monthly report function: Prompts user for the month in which they want to generate a report for &rarr; creates a table with ```PrettyTable``` &rarr; loops through the contributions and filters by specified month &rarr; aggregates contributions for each goal &rarr; adds the aggregated data to the table and then displays table to the user.
             - [x] DRY code: modules are imported (data_manager) to avoid repeating.
             - [x] Comments are provided extensively.
 
