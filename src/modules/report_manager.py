@@ -1,5 +1,6 @@
 import datetime  # module to handle dates
-from prettytable import PrettyTable  # 3rd party library to display data in a table
+# 3rd party library to display data in a table
+from prettytable import PrettyTable
 from colorama import init, Fore, Style
 
 init(autoreset=True)
@@ -17,20 +18,18 @@ def view_monthly_report(
     report = (
         {}
     )  # Initialise a dictionary to store the total contributions for each goal
-    for contribution in data["contributions"]:  # loop through all contributions
+    for contribution in data["contributions"]:  # loop through contributions
         if contribution["date"].startswith(
             month
         ):  # check if contribution date starts with user entered month
-            if (
-                contribution["goal"] not in report
-            ):  # initalise the total contributions for the goal if not already initialised
+            # initalise the total contributions for the goal if not already
+            # initialised
+            if (contribution["goal"] not in report):
                 report[contribution["goal"]] = 0
             report[contribution["goal"]] += contribution[
                 "amount"
             ]  # add contribution amount to the total for the goal
-    for (
-        goal,
-        total,
-    ) in report.items():  # add the total contribution for each goal to the table
+    for (goal, total, ) in report.items(
+    ):  # add the total contribution for each goal to the table
         table.add_row([goal, total])
     print(table)
