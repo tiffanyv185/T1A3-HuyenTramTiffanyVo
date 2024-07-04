@@ -1,36 +1,32 @@
 @echo off
 
-REM Navigate to the 'src' directory
+REM Check if Python is installed
+python --version
+IF %ERRORLEVEL% NEQ 0 (
+    echo Python is not installed. Please install Python first.
+    exit /b 1
+)
+
+REM Go to the src directory
 cd src
 
-REM Check if the virtual environment 'venv' exists
-if exist venv (
-    echo Activating existing virtual environment.
+REM Check if virtual environment exists
+IF EXIST venv (
+    echo Activating venv
     call venv\Scripts\activate
-) else (
-    echo Creating virtual environment.
+) ELSE (
+    echo Making venv
     python -m venv venv
     call venv\Scripts\activate
 )
 
-REM Install dependencies from requirements.txt
-if exist requirements.txt (
-    pip install -r requirements.txt
-) else (
-    echo requirements.txt not found. Exiting.
-    exit /b 1
-)
+REM Install dependencies
+pip install -r requirements.txt
 
-REM Run the main.py script
-if exist main.py (
-    python main.py
-) else (
-    echo main.py not found. Exiting.
-    exit /b 1
-)
+REM Run the app
+python main.py
 
-REM Deactivate the virtual environment
+REM Deactivate venv
 deactivate
 
-echo Script completed.
-pause
+pause   
