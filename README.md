@@ -28,7 +28,28 @@
 
 # Help Documentation
 
+## System/Hardware Requirements:
+* <b>Operating System:</b> Windows, MacOS, or Linux
+* <b>Python Version: </b> Python 3.6 or higher
+* <b>Hardware:</b> Any modern computer
+
 ## Installation Instructions
+1. Clone the Repository:
+    * Open the terminal.
+    * Run the following command to clone the repository:
+
+    ``` git clone git@github.com:tiffanyv185/T1A3-HuyenTramTiffanyVo.git ```
+
+2. Navigate to cloned directory:
+    
+    ``` cd T1A3-HuyenTramTiffanyVo ```
+
+3. Run the script in terminal:
+   
+   ``` ./run.sh ```
+----
+<b>OR, FOR A STEP BY STEP GUIDE:</b>
+
 
 1. Download Python:
     * Go to the [Python Downloads Page](https://www.python.org/downloads/).
@@ -81,65 +102,6 @@ The application requires the following Python packages:
 * ```prettytable```: library for displaying tabular data in a readable format.
 * ```os```: library module for interacting with the operating system
 * ```colorama```: library that allows text to displayed in different styles and colours.
-
-## System/Hardware Requirements:
-* <b>Operating System:</b> Windows, MacOS, or Linux
-* <b>Python Version: </b> Python 3.6 or higher
-* <b>Hardware:</b> Any modern computer
-
-## User Guide:
-To use the Money Saving Goal application, follow the installation guide first and then do the following:
-
-1. Run the Application:
-    * In your terminal, navigate to the application directory 
-
-        ```cd src```
-    * Run the main script:
-
-    ``` python3 main.py```
-
-2. Navigate the Menu:
-    * You will see a menu with multiple options. Enter the number corresponding to the action you want to perform:
-```
-Money Saving Application:
-1. Add Goal
-2. Edit Goal
-3. Delete Goal
-4. List Goals
-5. Contribute to Goal
-6. View Contribution History
-7. View Monthly Report
-9. Exit
-
-Enter your choice:
-```
-
-3. Add Goal:
-    *  Choose ```1``` and follow the prompts to enter the goal name, target amount, and deadline.
-
-4. Edit a Goal:
-    * Choose ```2```, a list of goals will appear. Enter the index of the goal you want to edit. Follow the prompts to update the goal details.
-
-5. Delete a Goal:
-    * Choose ```3```, a list of goals will appear. Enter the index of the goal you want to delete.
-
-6. List Goals:
-    * Choose ```4``` to view all your saving goals.
-
-7. Contribute to a Goal:
-    * Choose ```5```, a list of goals will appear. Enter the index of the goal you want to contribute to. Enter amount when prompted.
-
-8. View Contribution History:
-    * Choose ```6``` to see a detailed history of all contributions made to your goals.
-
-9. View Monthly Report:
-    * Choose ```7``` and enter the month (YYYY-MM) to generate a report of contributions for that month.
-
-10. Exit the Application:
-    * Choose ```9``` to exit.
-
-
-
 
 
 # Information
