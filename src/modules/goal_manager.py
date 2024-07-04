@@ -34,7 +34,7 @@ def edit_goal(
 ):  # List goals, prompt the user to select a goal and edit its details
     list_goals(data)  # display the list of current goals
     goal_index = int(
-        Fore.YELLOW + input("Enter the goal index to edit: ")
+        input("Enter the goal index to edit: ")
     )  # prompt user to enter in index
     if 0 <= goal_index < len(
             data["goals"]):  # ensure that entered index is valid

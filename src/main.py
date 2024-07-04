@@ -1,4 +1,5 @@
-from colorama import init, Fore, Style  # adds color to the terminal output; the menu
+# adds color to the terminal output; the menu
+from colorama import init, Fore, Style
 from modules import data_manager  # handles loading and saving data
 from modules import goal_manager  # manages goals (add, edit, delete, list)
 from modules import (
