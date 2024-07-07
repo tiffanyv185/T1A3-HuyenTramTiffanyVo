@@ -29,7 +29,7 @@
 # Help Documentation
 
 ## System/Hardware Requirements:
-* <b>Operating System:</b> Windows, MacOS, or Linux
+* <b>Operating System:</b> MacOS or Linux
 * <b>Python Version: </b> Python 3.6 or higher
 * <b>Hardware:</b> Any modern computer
 
