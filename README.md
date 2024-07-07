@@ -45,7 +45,7 @@
 
 3. Run the script in terminal:
    
-   ``` ./run.sh ```
+   ``` ./check_python.sh ```
 ----
 <b>OR, FOR A STEP BY STEP GUIDE:</b>
 
