@@ -22,7 +22,7 @@
     * [Overview of Features](#overview-of-features)
     * [Implentation Plan](#implementation-plan)
     * [Code Style Guide](#code-style-guide)
-
+    * [References](#references)
     ---
 
 # Help Documentation
@@ -221,6 +221,7 @@ This terminal based application is designed to help users manage their financial
 This code follows the PEP 8 style guide. the official guide for Python code. PEP 8 provides readable and cosistent conventions for code. 
 The following is a summary of PEP 8 Style guide:
 * Indentation: Uses 4 spaces per indentation.
+* Limit all lines to a maximum of 79 characters.
 * Blank Lines: Surround top-level function and class definitions with two lines. Method definitions are surrounded by a single blanke line.
 * Imports: Imports are placed together at the top of the the file.
 * Whitespace: Use of whitespace to seperate elements in code, such as operators, commas and semicolons.
@@ -228,3 +229,9 @@ The following is a summary of PEP 8 Style guide:
 * Naming Conventions: Use descriptive names for variables, functions and classes. functions and variables should be lowercase, with words seperated by underscores ```(snake_case)```
 
 More information can be found [here](https://peps.python.org/pep-0008/). 
+
+## References
+
+1.van Rossum G, Warsaw B, Coghlan N. PEP 8 – Style Guide for Python Code. peps.python.org. Published July 5, 2001. https://peps.python.org/pep-0008/
+
+2.Real Python. Documenting Python Code: A Complete Guide. Realpython.com. Published July 25, 2018. https://realpython.com/documenting-python-code/
