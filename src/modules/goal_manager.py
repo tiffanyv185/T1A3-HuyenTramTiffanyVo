@@ -1,9 +1,18 @@
 # 3rd party library to display information in table
 from prettytable import PrettyTable
 from colorama import init, Fore, Style
-from modules import data_manager  # module to save goal data
+from modules import data_manager
+from datetime import datetime  # module to save goal data
 
 init(autoreset=True)
+
+def validate_date(date_str):
+    # Check if the date string is in the correct format YYYY-MM-DD 
+    try:
+        datetime.strptime(date_str, "%Y-%m-%d")
+        return True
+    except ValueError:
+        return False
 
 
 def add_goal(data):  # Ask user to enter goal details
