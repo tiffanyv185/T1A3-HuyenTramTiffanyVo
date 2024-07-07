@@ -16,5 +16,5 @@ else
     echo "Python 3 is already installed."
 fi
 
-# Run the second script
+
 ./run_app.sh

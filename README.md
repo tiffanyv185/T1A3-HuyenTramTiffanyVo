@@ -14,6 +14,7 @@
 # Table of Contents
 * [Help Documentation](#help-documentation)
     * [Installation Instructions](#installation-instructions)
+    * [How to use the app](#how-to-use-the-app)
     * [Dependencies](#dependencies)
 
 * [Information](#information)
@@ -46,6 +47,9 @@
 3. Run the script in terminal:
    
    ``` ./check_python.sh ```
+
+4. OPTIONAL: To delete existing data and reset app. Run the script in terminal:
+    ``` ./retart_app.sh```
 ----
 <b>OR, FOR A STEP BY STEP GUIDE:</b>
 
@@ -94,6 +98,68 @@
 
     ``` python3 main.py```
 
+
+
+## How to use the app
+
+1. Select 'Add Goal':
+
+    * From the main menu, type 1 and press Enter.
+    * Enter Goal Details:
+        * Name: Type the name of your goal and press Enter.
+        * Target Amount: Type the target amount you want to save and press Enter.
+        * Deadline: Type the deadline for your goal in the format YYYY-MM-DD and press Enter.
+        * Confirmation: You will see a message confirming that the goal has been added successfully.
+
+2. Editing a Goal
+    * To edit an existing savings goal:
+    * From the main menu, type 2 and press Enter.
+        * List Goals: A table with your current goals will be displayed.
+        * Type the index number of the goal you want to edit and press Enter.
+        * Enter New Details:
+            * Name: Type the new name for the goal or press Enter to keep the current name.
+            * Target Amount: Type the new target amount or press Enter to keep the current amount.
+            * Deadline: Type the new deadline in the format YYYY-MM-DD or press Enter to keep the current deadline.
+            * Confirmation: You will see a message confirming that the goal has been edited successfully.
+
+3. Deleting a Goal
+    * To delete a savings goal:
+    * From the main menu, type 3 and press Enter.
+        * List Goals: A table with your current goals will be displayed.
+        * Select Goal to Delete: Type the index number of the goal you want to delete and press Enter.
+        * Confirmation: You will see a message confirming that the goal has been deleted successfully.
+
+4. Listing Goals
+    * To list all your savings goals:
+    * Select 'List Goals': From the main menu, type 4 and press Enter.
+    * View Goals: A table displaying all your goals, including the name, target amount, deadline, saved amount, and progress percentage, will be shown.
+
+5. Contributing to a Goal
+    * To contribute to a specific goal:
+    * Select 'Contribute to Goal': From the main menu, type 5 and press Enter.
+        * List Goals: A table with your current goals will be displayed.
+        * Select Goal to Contribute To: Type the index number of the goal you want to contribute to and press Enter.
+        * Enter Contribution Amount: Type the amount you want to contribute and press Enter.
+        * Confirmation: You will see a message confirming that the contribution has been added successfully.
+
+6. Viewing Contribution History
+    * To view the history of your contributions:
+    * Select 'View Contribution History': From the main menu, type 6 and press Enter.
+        * View History: A table displaying all your contributions, including the goal name, contribution amount, and date, will be shown.
+
+7. Viewing Monthly Report
+    * To view the monthly report of your contributions:
+    * Select 'View Monthly Report': From the main menu, type 7 and press Enter.
+        * Enter Month: Type the month for which you want to view the report in the format YYYY-MM and press Enter.
+        * View Report: A table displaying the total contributions for each goal during the specified month will be shown.
+
+8. Exiting the Application
+    * To exit the application:
+    * Select 'Exit': From the main meny, type 8 and press Enter.
+    * Confrimation: You will see a message confirming that you are exiting the application.
+
+
+
 ## Dependencies
 The application requires the following Python packages:
 * ```datetime```: For handling dates.
@@ -101,6 +167,7 @@ The application requires the following Python packages:
 * ```prettytable```: library for displaying tabular data in a readable format.
 * ```os```: library module for interacting with the operating system
 * ```colorama```: library that allows text to displayed in different styles and colours.
+
 
 
 # Information

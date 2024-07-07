@@ -6,8 +6,9 @@ from datetime import datetime  # module to save goal data
 
 init(autoreset=True)
 
+
 def validate_date(date_str):
-    # Check if the date string is in the correct format YYYY-MM-DD 
+    # Check if the date string is in the correct format YYYY-MM-DD
     try:
         datetime.strptime(date_str, "%Y-%m-%d")
         return True
