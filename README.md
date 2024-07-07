@@ -203,6 +203,19 @@ This terminal based application is designed to help users manage their financial
             - [x] Exit: Allow users to exit the application.
             - [x] Ensure that script only runs when executed directly by using ``` if __name___ == "_main_": main()```.
 
+3. <b> Project management tools: </b>
+![Trello Screenshot1](./docs/Trello1.png)
+![Trello Screenshot1](./docs/Trello2.png)
+![Trello Screenshot1](./docs/Trello3.png)
+![Trello Screenshot1](./docs/Trello4.png)
+![Trello Screenshot1](./docs/Trello5.png)
+![Trello Screenshot1](./docs/Trello6.png)
+![Trello Screenshot1](./docs/Trello7.png)
+![Trello Screenshot1](./docs/Trello8.png)
+![Trello Screenshot1](./docs/Trello9.png)
+![Trello Screenshot1](./docs/Trello10.png)
+![Trello Screenshot1](./docs/Trello11.png)
+![Trello Screenshot1](./docs/Trello12.png)
 
 ## Code Style Guide
 This code follows the PEP 8 style guide. the official guide for Python code. PEP 8 provides readable and cosistent conventions for code. 
